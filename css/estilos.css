@@ -1,0 +1,458 @@
+/*
+ejemplo prefijos
+
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-o-border-radius: 10px;
+-ms-border-radius: 10px;
+border-radius: 10px;
+
+*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+
+}
+
+/*----------CABECERA-----------------*/
+
+header{
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.logo{
+  padding: 25px 0;
+}
+
+.logo img{
+  width: 100px;
+  display: block;
+  margin:auto;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  max-width: 430px;
+  margin: auto;
+}
+
+.menu a{
+  text-decoration: none;
+  color: green;
+  font-size: 14px;
+  transition: all 300ms;
+}
+
+.menu a:hover{
+  color: #150958;
+  font-weight: bold;
+  transform: scale(1.5);
+
+}
+
+/*---------FIN DE CABECERA----------*/
+
+/*-----------BANNER PRINCIPAL-----------*/
+
+.banner{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/edificios.jpg);
+  background-position: center;
+  background-size:  cover;
+}
+
+.banner > div{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 139, 138, 0.2);
+}
+
+
+.llamada-accion{
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.llamada-accion p{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.llamada-accion h2{
+  font-size: 42px;
+  color: white;
+  width: 100%;
+  padding: 45px 0;
+  font-family: 'Bebas Neue', cursive;
+  max-width: 470px;
+
+
+}
+
+.llamada-accion a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 50px;
+  background-color: rgb(19,110,109);
+  border-radius: 24px;
+  margin-top: 35px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.llamada-accion a:hover{
+  color: #ffffff;
+  background-color: #150958;
+
+}
+
+/*------ FIN DE BANNER PRINCIPAL--------*/
+
+/*------SECCION DE SERVICIOS---------*/
+
+.nuestros-servicios{
+  background-color: #ffffff;
+}
+.nuestros-servicios h3 {
+  text-align: center;
+  padding-top: 55px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  color: #136e6d;
+
+  margin: auto;
+}
+.nuestros-servicios .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.nuestros-servicios .servicio{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color:#150958;
+
+  max-width: 270px;
+  margin: 20px auto;
+  border: 2px solid #150958;
+  border-radius: 20px;
+
+}
+.nuestros-servicios .servicio h4{
+  color:#136e6d;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+
+/*------FIN DE SECCION DE SERVICIOS---------*/
+
+/*--------SECCION DE CONTACTO----------*/
+
+.contacto{
+  width: 100%;
+  background-color: #136e6d;
+  color: #ffffff;
+  padding-bottom: 20px;
+
+}
+.contacto .contacto_izq {
+  text-align: center;
+  margin: auto;
+}
+.contacto .contacto_izq h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+}
+.contacto form{
+  width: 100%;
+  margin:auto;
+  background-color: white;
+  max-width: 570px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 15px;
+
+}
+
+input, textarea{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 17px;
+  border-radius: 10px;
+  border-color: #136e6d;
+  border-style: solid;
+}
+textarea{
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+min-width: 95%;
+}
+
+#boton{
+  background: #136e6d;
+  color: white;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+#boton:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #136e6d;
+}
+
+.contacto > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*------FIN SECCION DE CONTACTO---------*/
+
+
+/*-----------SECCION DE INSTALACIONES------------*/
+.instalaciones{
+  width: 100%;
+  background-color: white;
+  color: #136e6d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.instalaciones .info-instalaciones{
+  text-align: center;
+  margin: auto;
+}
+
+.instalaciones .info-instalaciones h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+}
+
+.instalaciones img{
+  /*max-width: 570px;*/
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.fotos-instalaciones{
+  position: relative;
+  max-width: 570px;
+  width: 100%;
+
+  box-sizing: border-box;
+
+}
+/*
+.contacto form{
+  width: 100%;
+  margin:auto;
+  background-color: white;
+  max-width: 570px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 15px;
+
+}
+
+*/
+
+
+
+.instalaciones > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+/*---------FIN DE SECCION DE INSTALACIONES----------*/
+
+
+
+
+
+/*------SECCION DE FOOTER--------*/
+
+/*------------Footer ver 2  */
+
+
+footer{
+  width: 100%;
+  background-color: #136e6d;
+  color: white;
+
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.container-footer{
+  display: flex;
+}
+
+.column1{
+  /* max-width: 400px; */
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  max-width: 270px;
+  margin: 20px auto;
+}
+/*
+text-align: center;
+padding-top: 20px;
+padding-bottom: 50px;
+color:#150958;
+
+max-width: 270px;
+margin: 20px auto;
+border: 2px solid #150958;
+border-radius: 20px;
+*/
+
+
+.column1 h1{
+  font-size: 22px;
+}
+
+.column1 p{
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+
+}
+
+.column2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  max-width: 270px;
+  margin: 20px auto;
+}
+
+.column2 h1{
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.row {
+  margin-top: 10px;
+  display: flex;
+}
+
+.row img {
+
+  height: 30px;
+}
+
+.row label{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.column3{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  max-width: 270px;
+  margin: 20px auto;
+
+}
+
+.column3 h1{
+  font-size: 22px;
+
+}
+
+
+.column3 p{
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+}
+
+.container-copy {
+  width: 100%;
+  background-color: #128b8a;
+  padding: 7px;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.copyright{
+  color: white;
+}
+.copyright p{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/**/
+@media all and (max-width:769px){
+  .container-footer{
+    display: block;
+  }
+  .column1 p{
+    justify-content: center;
+  }
+  .column2 .row{
+    justify-content: center;
+  }
+}
+/*------FIN DE SECCION DE FOOTER---------*/
